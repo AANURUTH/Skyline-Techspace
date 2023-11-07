@@ -1,0 +1,288 @@
+body{
+    background-color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.container{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* my input code  starts here */
+input[type="text"]{
+    width: 50%;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 20px;
+
+    /* text-indent  gives space of 25px before your text begins*/
+    text-indent: 25px;
+}
+
+
+input[type="text"]:focus{
+    border: 1px dotted darkblue;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+input[type="email"]{
+    width: 50%;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 20px;
+    text-indent: 25px;
+}
+input[type="email"]:focus{
+    border: 1px dotted darkblue;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+
+input[type="tel"]{
+    width: 50%;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 20px;
+    text-indent: 25px;
+}
+input[type="tel"]:focus{
+    border: 1px dotted darkblue;
+    border-radius: 20px;
+    outline: none;
+}
+
+input[type="password"]{
+    width: 50%;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 20px;
+
+    /* text-indent  gives space of 20px before your text begins*/
+    text-indent: 25px;
+}
+input[type="password"]:focus{
+    border: 1px dotted darkblue;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+
+
+::placeholder{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: lightgreen;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 20px;
+}
+
+/* social media code start here */
+
+.social-media a{
+text-decoration:none ;
+padding: 15px;
+margin: 10px;
+border-radius: 20px;
+color: aliceblue;
+
+}
+.fa-brands{
+    padding: 10px;
+}
+
+ .fb{
+    background-color: #3b5998;
+    
+   
+} 
+.tw{
+    background: #26a7de;;
+    
+}
+.go{
+    background-color:rgb(231, 6, 6);
+    
+   
+}
+/* my divider code starts here */
+.divider{
+display: flex;
+align-items: center;
+margin:15px;
+
+}
+
+.divider::before, .divider::after{
+    content: "";
+    padding: 1px;
+    background-color: lightblue;
+    flex: 1;
+    margin: 10px 3px;
+}
+
+.divider-bg{
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 55%;
+    border: 1px solid lightblue;
+    
+}
+
+/* submit button code  */
+
+input[type="submit"]{
+    width: 50%;
+    padding: 10px; 
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: green;
+     font-size: 15px; 
+}
+
+
+/* my moving of icon code starts here */
+
+
+.form-user{
+    position: relative;
+}
+
+
+.user{
+position:absolute;
+top: 37%;
+left:25% ;
+font-size: 20px;
+}
+
+
+.form-email{
+    position: relative;
+}
+
+
+.email{
+position:absolute;
+top: 37%;
+left:25% ;
+font-size: 20px;
+}
+
+
+.form-tel{
+    position: relative;
+}
+
+
+.tel{
+position:absolute;
+top: 37%;
+left:25% ;
+font-size: 20px;
+}
+
+
+.form-password{
+    position: relative;
+}
+
+
+.pwd{
+position:absolute;
+top: 37%;
+left:25% ;
+font-size: 20px;
+}
+
+
+
+/* my mobile responsiveness code start here */
+
+@media (max-width:845px){
+   .container{
+    width: 100%;
+   }
+
+   .social-media a{
+    text-decoration:none ;
+    padding: 10px;
+    margin: 10px; 
+    border-radius: 10px;
+    color: aliceblue;}
+
+    .container p{
+        margin: 20px;
+    }
+    input[type="text"]{
+        width: 80%;
+
+    }
+    input[type="email"]{
+        width: 80%;
+
+    }
+    input[type="tel"]{
+        width: 80%;
+    }
+    input[type="password"]{
+        width: 80%;
+
+    }
+    .email{
+        position:absolute;
+        top: 37%;
+       left:10% ;
+        font-size: 20px;
+        } 
+    .tel{
+        position:absolute;
+        top: 37%;
+       left:10% ;
+        font-size: 20px;
+        } 
+    .user{
+            position:absolute;
+            top: 37%;
+           left:10% ;
+            font-size: 20px;
+            } 
+    .pwd{
+      position:absolute;
+       top: 37%;
+        left:10% ;
+        font-size: 20px;
+                }           
+    .divider::before, .divider::after{
+        content: "";
+        padding: 1px;
+        background-color: lightblue;
+        flex: 1;
+        margin: 0 -20px;}
+
+        input[type="submit"]{
+            width: 80%;
+          
+        }
+        ::placeholder{
+            padding: 0 5px;
+        }
+   body{
+    overflow-x: hidden;
+    background-color: white;
+   }  
+}
